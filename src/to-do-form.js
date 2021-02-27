@@ -15,7 +15,7 @@ const ToDoForm = () => {
     }
     }>
       <input value={value} onChange={e=>{setValue(e.target.value)}}></input>
-      <button type='submit'>Add new thing to do!</button>
+      <button type='submit'>ADD!</button>
     </form>
   )
   }
