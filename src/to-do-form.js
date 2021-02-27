@@ -1,9 +1,9 @@
 import React from 'react';
-import {StoreContex} from './App'
+import {StoreContexToDos} from './to-do-store';
 
 
 const ToDoForm = () => {
-    const store = React.useContext(StoreContex);
+    const store = React.useContext(StoreContexToDos);
     const [value, setValue] = React.useState('')
   
   return (

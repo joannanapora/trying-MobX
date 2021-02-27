@@ -5,8 +5,6 @@ import ToDoList from './to-do-list';
 import ToDoForm from './to-do-form';
 import StoreProvider from './to-do-store';
 
-export const StoreContex = React.createContext();
-
 
 function App() {
   return (

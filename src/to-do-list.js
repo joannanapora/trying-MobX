@@ -1,10 +1,11 @@
 import React from 'react';
 import {useObserver} from 'mobx-react';
-import {StoreContex} from './App'
+import {StoreContexToDos} from './to-do-store';
 
 
 const ToDoList = () => {
-    const store = React.useContext(StoreContex);
+
+    const store = React.useContext(StoreContexToDos);
   
     return useObserver(()=>(
       <ul>

@@ -1,6 +1,7 @@
 import React from 'react';
 import {useLocalStore} from 'mobx-react';
-import {StoreContex} from './App'
+
+export const StoreContexToDos = React.createContext();
 
 const StoreProvider = ({ children }) => {
     const store = useLocalStore(() => ({
@@ -13,7 +14,7 @@ const StoreProvider = ({ children }) => {
       }
     }));
   
-    return <StoreContex.Provider value={store}>{children}</StoreContex.Provider>;
+    return <StoreContexToDos.Provider value={store}>{children}</StoreContexToDos.Provider>;
   };
 
   export default StoreProvider;
